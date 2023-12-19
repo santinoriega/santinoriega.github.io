@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Cine </title>
+  </head >
+  <style>
+    body {
+       margin:0;
+  padding:0;
+  font:400 12px/12px sans-serif;
+    }
+
+/*CONTENEDOR DEL TÍTULO*/
+#content div.inicio{
+  background-color:#F0F0F0;
+  
+  }
+
+/*CONFIGURACIÓN DEL TÍTULO*/
+#content div.inicio h1{
+  font:300 1.3em/2em sans-serif;
+  margin:0;
+  padding:.5em;
+}
+
+#content ul{
+  margin:0;
+  padding:0;
+  background-color:#E6DEFF;
+  }
+
+#content ul li{
+  display:inline-block;
+  vertical-align:top;
+  padding:10px;
+  background-color:#CCC;
+  margin:0;
+}
+#content ul li:hover{
+  background-color:#FFF;
+  }
+
+/*CONFIGURACIÓN DE LOS PANELES DE CONTENIDO*/
+#content div.data{
+  display:block;
+  display:-webkit-flex;
+  display:        flex;
+  margin-top:2em;
+}
+
+/*CONFIGURACIÓN GENERAL DE LOS DOS PANELES*/
+#content div.data > div{
+  display:inline-block;
+  flex:1;
+  padding:20px;
+}
+
+#content div.data div.izquierda{
+  background-color:#DDEAFD;
+}
+
+#content div.data div.derecha{
+  background-color:#EBF7C4;
+}
+body {
+  background-color:red;
+}
+  </style>
+  <body>
+    <div id='content'>
+      <div class="inicio">
+        <h1>Título</h1>
+      </div>
+      <ul>
+        <li>
+          <a href="#">Opción 1</a>
+        </li><li>
+          <a href="#">Opción 2</a>
+        </li><li>
+          <a href="#">Opción 3</a>
+        </li><li>
+          <a href="#">Opción 4</a>
+        </li><li>
+          <a href="#">Opción 5</a>
+        </li>
+      </ul>
+  
+      <div class="data">
+        <div class="izquierda">
+    	    Contenido Parte Izquierda	
+        </div>
+
+        <div class="derecha">
+      	  Contenido Parte Derecha
+   	    </div>
+      </div>
+    </div>
+  </body>
+</html>
